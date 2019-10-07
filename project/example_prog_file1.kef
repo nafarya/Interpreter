@@ -1,0 +1,3 @@
+func sq(n) {
+  return n * n;
+}

@@ -1,0 +1,59 @@
+func condtest(a) {
+  if (1) {
+    a = 5;
+    if (0) {
+      a = 7;
+    } else {
+      a = 6;
+    }
+  }
+  return a;
+}
+
+func f(n) {
+  if (n) {
+    return n * f( (n - 1) );
+  } else {
+    return 1;
+  }
+}
+
+func testCond() {
+  c = condtest(2);
+  print(c);
+  return 0;
+}
+
+func is1(n) {
+  if ((n - 1)) {
+    return 0;
+  }
+  return 1;
+}
+
+func is0(n) {
+  if (n) {
+    return 0;
+  }
+  return 1;
+}
+
+func fib(n) {
+  if (is0(n)) {
+    return 1;
+  }
+  if (is1(n)) {
+    return 1;
+  }
+  return fib((n-2)) + fib((n - 1));
+}
+
+
+func main() {
+  n = readInt();
+  p = 777;
+  for i = 1; (i - n - 1); i = i + 1 {
+    print(sq(i));
+  }
+  return 0;
+}
